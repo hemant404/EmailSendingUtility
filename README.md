@@ -5,6 +5,6 @@
 
 ## How to Start
 1. Clone the repo.
-2. Open EmailSendingUtility.sln file in IDE.
-3. Add the required information to send the Email in Program.cs file.
+2. Open `EmailSendingUtility.sln` file in IDE.
+3. Add the required information to send the Email in `Program.cs` file.
 4. Build and Run the Project.
