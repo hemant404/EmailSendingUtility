@@ -15,7 +15,7 @@ namespace MailUtility
                 var networkCredential = new NetworkCredential
                 {
                     Password = mailArgs.Password,
-                    UserName = mailArgs.From
+                    UserName = mailArgs.MailFrom
                 };
 
                 var mailMsg = new MailMessage
@@ -58,7 +58,7 @@ namespace MailUtility
                     }
                 }
 
-                mailMsg.From = new MailAddress(mailArgs.From, mailArgs.Name);
+                mailMsg.From = new MailAddress(mailArgs.MailFrom, mailArgs.Name);
 
                 var smtpClient = new SmtpClient(mailArgs.SmtpHost)
                 {
